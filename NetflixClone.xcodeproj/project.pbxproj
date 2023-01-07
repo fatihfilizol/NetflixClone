@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1B29AB29619DCA00B81091 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1B29AA29619DCA00B81091 /* Movie.swift */; };
+		FB1B29AD29619E7F00B81091 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1B29AC29619E7F00B81091 /* HomeView.swift */; };
+		FB1B29AF29619E9900B81091 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1B29AE29619E9900B81091 /* StandardHomeMovie.swift */; };
+		FB1B29B129619F7100B81091 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1B29B029619F7100B81091 /* GlobalHelpers.swift */; };
+		FB1B29B32961A14800B81091 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1B29B22961A14800B81091 /* HomeVM.swift */; };
 		FB5A860329609D17006BB8C7 /* NetflixCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A860229609D17006BB8C7 /* NetflixCloneApp.swift */; };
 		FB5A860529609D17006BB8C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A860429609D17006BB8C7 /* ContentView.swift */; };
 		FB5A860729609D18006BB8C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5A860629609D18006BB8C7 /* Assets.xcassets */; };
 		FB5A860A29609D18006BB8C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5A860929609D18006BB8C7 /* Preview Assets.xcassets */; };
+		FB5A86192960A0AC006BB8C7 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FB5A86182960A0AC006BB8C7 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1B29AA29619DCA00B81091 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FB1B29AC29619E7F00B81091 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FB1B29AE29619E9900B81091 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
+		FB1B29B029619F7100B81091 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		FB1B29B22961A14800B81091 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		FB5A85FF29609D17006BB8C7 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5A860229609D17006BB8C7 /* NetflixCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixCloneApp.swift; sourceTree = "<group>"; };
 		FB5A860429609D17006BB8C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5A86192960A0AC006BB8C7 /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +63,9 @@
 		FB5A860129609D17006BB8C7 /* NetflixClone */ = {
 			isa = PBXGroup;
 			children = (
-				FB5A860229609D17006BB8C7 /* NetflixCloneApp.swift */,
-				FB5A860429609D17006BB8C7 /* ContentView.swift */,
-				FB5A860629609D18006BB8C7 /* Assets.xcassets */,
+				FB5A861629609F3C006BB8C7 /* macOS */,
+				FB5A861529609F34006BB8C7 /* iOS */,
+				FB5A861329609F08006BB8C7 /* Shared */,
 				FB5A860829609D18006BB8C7 /* Preview Content */,
 			);
 			path = NetflixClone;
@@ -65,6 +77,35 @@
 				FB5A860929609D18006BB8C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB5A861329609F08006BB8C7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A860229609D17006BB8C7 /* NetflixCloneApp.swift */,
+				FB5A860429609D17006BB8C7 /* ContentView.swift */,
+				FB5A860629609D18006BB8C7 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FB5A861529609F34006BB8C7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB1B29AA29619DCA00B81091 /* Movie.swift */,
+				FB1B29AC29619E7F00B81091 /* HomeView.swift */,
+				FB1B29AE29619E9900B81091 /* StandardHomeMovie.swift */,
+				FB1B29B029619F7100B81091 /* GlobalHelpers.swift */,
+				FB1B29B22961A14800B81091 /* HomeVM.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		FB5A861629609F3C006BB8C7 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,9 @@
 			dependencies = (
 			);
 			name = NetflixClone;
+			packageProductDependencies = (
+				FB5A86182960A0AC006BB8C7 /* KingfisherSwiftUI */,
+			);
 			productName = NetflixClone;
 			productReference = FB5A85FF29609D17006BB8C7 /* NetflixClone.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,9 @@
 				Base,
 			);
 			mainGroup = FB5A85F629609D17006BB8C7;
+			packageReferences = (
+				FB5A86172960A0AC006BB8C7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = FB5A860029609D17006BB8C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1B29B129619F7100B81091 /* GlobalHelpers.swift in Sources */,
 				FB5A860529609D17006BB8C7 /* ContentView.swift in Sources */,
+				FB1B29B32961A14800B81091 /* HomeVM.swift in Sources */,
+				FB1B29AD29619E7F00B81091 /* HomeView.swift in Sources */,
+				FB1B29AF29619E9900B81091 /* StandardHomeMovie.swift in Sources */,
+				FB1B29AB29619DCA00B81091 /* Movie.swift in Sources */,
 				FB5A860329609D17006BB8C7 /* NetflixCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB5A86172960A0AC006BB8C7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB5A86182960A0AC006BB8C7 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB5A86172960A0AC006BB8C7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB5A85F729609D17006BB8C7 /* Project object */;
 }
