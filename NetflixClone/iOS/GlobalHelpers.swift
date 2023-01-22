@@ -8,12 +8,12 @@
 import Foundation
 import SwiftUI
 
-let exampleMovie1 = Movie(id: UUID().uuidString, name: "DARK", thumbnailURL: URL(string: "https://picsum.photos/200/300")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
-let exampleMovie2 = Movie(id: UUID().uuidString, name: "TRAVELERS", thumbnailURL: URL(string: "https://picsum.photos/200/301")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
-let exampleMovie3 = Movie(id: UUID().uuidString, name: "ALONE", thumbnailURL: URL(string: "https://picsum.photos/200/302")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
-let exampleMovie4 = Movie(id: UUID().uuidString, name: "COMMUNİTY", thumbnailURL: URL(string: "https://picsum.photos/200/303")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
-let exampleMovie5 = Movie(id: UUID().uuidString, name: "HANNİBAL", thumbnailURL: URL(string: "https://picsum.photos/200/304")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
-let exampleMovie6 = Movie(id: UUID().uuidString, name: "AFTER LIFE", thumbnailURL: URL(string: "https://picsum.photos/200/305")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
+let exampleMovie1 = Movie(id: UUID().uuidString, name: "DARK", thumbnailURL: URL(string: "https://m.media-amazon.com/images/M/MV5BZGZlN2QzYTQtNmZkMy00YjdiLWIwOGUtMzlhZTJlMmIyNmJhXkEyXkFqcGdeQXVyOTQ2MjQ3MTI@._V1_FMjpg_UX1000_.jpg")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
+let exampleMovie2 = Movie(id: UUID().uuidString, name: "TRAVELERS", thumbnailURL: URL(string: "https://img.tv100.com/rcman/Cw600h870q95gm/storage/files/images/2022/10/06/23243-a-3795-CXDg.jpg")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
+let exampleMovie3 = Movie(id: UUID().uuidString, name: "ALONE", thumbnailURL: URL(string: "https://cestquoicebazar.files.wordpress.com/2020/07/0298185.jpg-r_1920_1080-f_jpg-q_x-xxyxx.jpg")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
+let exampleMovie4 = Movie(id: UUID().uuidString, name: "COMMUNİTY", thumbnailURL: URL(string: "https://i5.walmartimages.com/asr/b38602c7-de1e-4afc-a5cb-d8623b9b3190.e35fd1cac0a8a64745857c6a8e873547.jpeg")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
+let exampleMovie5 = Movie(id: UUID().uuidString, name: "HANNİBAL", thumbnailURL: URL(string: "https://tr.web.img3.acsta.net/r_1280_720/pictures/21/09/09/12/31/0936837.jpg")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
+let exampleMovie6 = Movie(id: UUID().uuidString, name: "AFTER LIFE", thumbnailURL: URL(string: "https://cdn.dsmcdn.com/ty102/product/media/images/20210411/15/79263755/68335978/1/1_org_zoom.jpg")!, categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"])
 
 
 
