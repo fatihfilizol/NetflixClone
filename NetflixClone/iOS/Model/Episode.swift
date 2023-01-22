@@ -1,0 +1,22 @@
+//
+//  Episode.swift
+//  NetflixClone
+//
+//  Created by Fatih Filizol on 22.01.2023.
+//
+
+import Foundation
+
+struct Episode : Identifiable {
+    var id = UUID().uuidString
+    
+    var name : String
+    var seansons : Int
+    var thumbnailImageURLString : String
+    var description : String
+    var length : Int
+    
+    var thumbnailURL : URL {
+        return URL(string: thumbnailImageURLString)!
+    }
+}
