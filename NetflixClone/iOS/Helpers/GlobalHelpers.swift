@@ -19,6 +19,7 @@ let exampleMovie1 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Onur Ünlü",
     cast: "Ali Atay, Serkan Keskin",
+    moreLikeThisMovies: [exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6,exampleMovie7],
     promotionHeadline: "New episodes coming soon")
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -31,7 +32,9 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Onur Ünlü",
     cast: "Ali Atay, Serkan Keskin",
+    moreLikeThisMovies: [],
     promotionHeadline: "Best Rated Show")
+    
 let exampleMovie3 = Movie(
     id: UUID().uuidString,
     name: "ALONE",
@@ -42,7 +45,8 @@ let exampleMovie3 = Movie(
     numberOfSeasons: 5,
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Onur Ünlü",
-    cast: "Ali Atay, Serkan Keskin")
+    cast: "Ali Atay, Serkan Keskin",
+    moreLikeThisMovies: [])
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
     name: "COMMUNİTY",
@@ -54,6 +58,7 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Onur Ünlü",
     cast: "Ali Atay, Serkan Keskin",
+    moreLikeThisMovies: [],
     promotionHeadline: "Watch Season 2 Now")
 let exampleMovie5 = Movie(
     id: UUID().uuidString,
@@ -64,7 +69,8 @@ let exampleMovie5 = Movie(
     rating: "TV-MA",
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Onur Ünlü",
-    cast: "Ali Atay, Serkan Keskin")
+    cast: "Ali Atay, Serkan Keskin",
+    moreLikeThisMovies: [])
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
     name: "AFTER LIFE",
@@ -75,11 +81,26 @@ let exampleMovie6 = Movie(
     numberOfSeasons: 1,
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Onur Ünlü",
-    cast: "Ali Atay, Serkan Keskin")
+    cast: "Ali Atay, Serkan Keskin",
+    moreLikeThisMovies: [])
+let exampleMovie7 = Movie(
+    id: UUID().uuidString,
+    name: "AFTER LIFE",
+    thumbnailURL: URL(string: "https://cdn.dsmcdn.com/ty102/product/media/images/20210411/15/79263755/68335978/1/1_org_zoom.jpg")!,
+    categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"],
+    year: 2010,
+    rating: "TV-MA",
+    numberOfSeasons: 1,
+    defaultEpisodeInfo: exampleEpisodeInfo,
+    creators: "Onur Ünlü",
+    cast: "Ali Atay, Serkan Keskin",
+    moreLikeThisMovies: [])
 
 
 
-let exampleMovies: [Movie] = [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6]
+var exampleMovies: [Movie] {
+    return [exampleMovie1,exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6,exampleMovie7].shuffled()
+}
 
 let exampleEpisodeInfo = CurrentEpisodeInfo(episodeName: "Beginnings and Endings", desription: "Six months after the disappearances, the police from a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event", season: 2, episode: 1)
 
