@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CustomTabSwitcher: View {
     
+    @State private var currentTab: CustomTab = .episodes
+    
     var tabs : [CustomTab]
     
     func widthForTab (_ tab: CustomTab) -> CGFloat {
@@ -20,20 +22,23 @@ struct CustomTabSwitcher: View {
         VStack{
             // Custom tab picker
             ScrollView(.horizontal, showsIndicators: false){
-                HStack{
+                HStack(spacing: 20){
                     ForEach(tabs, id: \.self) { tab in
                         VStack {
                             //red bar
                             Rectangle()
                                 .frame(width: widthForTab(tab),height: 6)
+                                .foregroundColor(tab==currentTab ? Color.red : Color.clear)
                             //button
                             Button {
-                                //
+                                currentTab = tab
                             } label: {
                                 Text(tab.rawValue)
                                     .font(.system(size: 16, weight: .bold))
+                                    .foregroundColor(tab==currentTab ? Color.white : Color.gray)
                             }
                             .buttonStyle(PlainButtonStyle())
+                            .frame(width: widthForTab(tab),height: 30)
 
                             
                         }
@@ -42,7 +47,14 @@ struct CustomTabSwitcher: View {
             }
             
             // Selected view
-            Text("SELECTED VIEW")
+            switch currentTab {
+            case .episodes:
+                Text("EPISODES")
+            case .trailers:
+                Text("TRAILERS")
+            case .more:
+                Text("MORE")
+            }
         }
         .foregroundColor(.white)
     }
