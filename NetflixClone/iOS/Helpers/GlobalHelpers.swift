@@ -10,7 +10,7 @@ import SwiftUI
 
 let exampleVideoURL = URL(string: "https://www.youtube.com/watch?v=XV2m8WRCWG8")!
 
-let exampleImageURL = URL(string: "https://fav10.net/forum/data/attachments/111/111864-dbabbaae75048fbc15f55c9129de556c.jpg")!
+let exampleImageURL = URL(string: "https://yorumguncel.com/wp-content/uploads/2022/03/leyla-ile-mecnun-2-sezon-11-bolum-ne-zaman-yayinlanacak-exxen.jpg")!
 let exampleImageURL2 = URL(string: "https://s01.diziler.com/original/21-10/04/leyla-ile-mecnun-2sezon-3.jpg")!
 let exampleImageURL3 = URL(string: "https://cdn.kayiprihtim.com/wp-content/uploads/2021/06/leyla-ile-mecnun-bolum-sayisi-exxen.jpeg")!
 
@@ -24,6 +24,52 @@ let exampleTrailer3 = Trailer(name: "Season 2 Trailer", videoURL: exampleVideoUR
 
 let exampleTrailers = [exampleTrailer1,exampleTrailer2,exampleTrailer3]
 
+let episode1 = Episode(name: "Beginnings and Endinga",
+                       seanson: 1,
+                       episodeNumber: 1,
+                       thumbnailImageURLString: "https://cdn.kayiprihtim.com/wp-content/uploads/2021/06/leyla-ile-mecnun-bolum-sayisi-exxen.jpeg",
+                       description: "Six months after the disappearances, the police from a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event",
+                       length: 53,
+                       videoURL: exampleVideoURL)
+let episode2 = Episode(name: "Dark Matter",
+                       seanson: 1,
+                       episodeNumber: 2,
+                       thumbnailImageURLString: "https://s01.diziler.com/original/21-10/04/leyla-ile-mecnun-2sezon-3.jpg",
+                       description: "In 2052, Jonas learns that most of Winden perished in an apocalyptic event. Six months after the disappearances, the police from a task force. ",
+                       length: 54,
+                       videoURL: exampleVideoURL)
+let episode3 = Episode(name: "Ghosts",
+                       seanson: 1,
+                       episodeNumber: 3,
+                       thumbnailImageURLString: "https://yorumguncel.com/wp-content/uploads/2022/03/leyla-ile-mecnun-2-sezon-11-bolum-ne-zaman-yayinlanacak-exxen.jpg",
+                       description: "Six months after the disappearances, the police from a task force. In 2052.",
+                       length: 56,
+                       videoURL: exampleVideoURL)
+let episode4 = Episode(name: "Beginnings and Endinga",
+                       seanson: 2,
+                       episodeNumber: 4,
+                       thumbnailImageURLString: "https://cdn.kayiprihtim.com/wp-content/uploads/2021/06/leyla-ile-mecnun-bolum-sayisi-exxen.jpeg",
+                       description: "Six months after the disappearances, the police from a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event",
+                       length: 53,
+                       videoURL: exampleVideoURL)
+let episode5 = Episode(name: "Dark Matter",
+                       seanson: 2,
+                       episodeNumber: 5,
+                       thumbnailImageURLString: "https://s01.diziler.com/original/21-10/04/leyla-ile-mecnun-2sezon-3.jpg",
+                       description: "In 2052, Jonas learns that most of Winden perished in an apocalyptic event. Six months after the disappearances, the police from a task force. ",
+                       length: 54,
+                       videoURL: exampleVideoURL)
+let episode6 = Episode(name: "Ghosts",
+                       seanson: 2,
+                       episodeNumber: 6,
+                       thumbnailImageURLString: "https://yorumguncel.com/wp-content/uploads/2022/03/leyla-ile-mecnun-2-sezon-11-bolum-ne-zaman-yayinlanacak-exxen.jpg",
+                       description: "Six months after the disappearances, the police from a task force. In 2052.",
+                       length: 56,
+                       videoURL: exampleVideoURL)
+
+var allExampleEpisodes = [episode1, episode2, episode3, episode4, episode5, episode6]
+
+
 let exampleMovie1 = Movie(
     id: UUID().uuidString,
     name: "DARK",
@@ -31,12 +77,14 @@ let exampleMovie1 = Movie(
     categories: ["Dystopian", "Exciting", "Suspenful", "Sci-Fi TV"],
     year: 2010,
     rating: "TV-MA",
-    numberOfSeasons: 25,
+    numberOfSeasons: 2,
     defaultEpisodeInfo: exampleEpisodeInfo,
     creators: "Onur Ünlü",
     cast: "Ali Atay, Serkan Keskin",
     moreLikeThisMovies: [exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5,exampleMovie6,exampleMovie7],
-    promotionHeadline: "New episodes coming soon", trailers: exampleTrailers)
+    episodes: allExampleEpisodes,
+    promotionHeadline: "New episodes coming soon",
+    trailers: exampleTrailers)
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
     name: "TRAVELERS",
