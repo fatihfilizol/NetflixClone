@@ -29,6 +29,7 @@
 		FB98930F2985154100410ABB /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98930E2985154100410ABB /* VideoPreviewImage.swift */; };
 		FB989311298517D500410ABB /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989310298517D500410ABB /* TrailerList.swift */; };
 		FB989313298848A000410ABB /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989312298848A000410ABB /* EpisodesView.swift */; };
+		FB989319298E596200410ABB /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989318298E596200410ABB /* HomeStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		FB98930E2985154100410ABB /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		FB989310298517D500410ABB /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 		FB989312298848A000410ABB /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		FB989318298E596200410ABB /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				FB1B29B22961A14800B81091 /* HomeVM.swift */,
 				FB1B29AC29619E7F00B81091 /* HomeView.swift */,
+				FB989318298E596200410ABB /* HomeStack.swift */,
 			);
 			path = HomeViews;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				FB1B29AB29619DCA00B81091 /* Movie.swift in Sources */,
 				FB5A860329609D17006BB8C7 /* NetflixCloneApp.swift in Sources */,
 				FB9893082982E77800410ABB /* MoreLikeThis.swift in Sources */,
+				FB989319298E596200410ABB /* HomeStack.swift in Sources */,
 				FB8546D2297D607900ABF2C8 /* CustomTabSwitcher.swift in Sources */,
 				FB989311298517D500410ABB /* TrailerList.swift in Sources */,
 				FB8546C6296AC01200ABF2C8 /* SmallVerticalButton.swift in Sources */,
