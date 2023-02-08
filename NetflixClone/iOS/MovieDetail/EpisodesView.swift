@@ -15,7 +15,7 @@ struct EpisodesView: View {
     @Binding var selectedSeason : Int
     
     func getEpisodes(forSeason season: Int) -> [Episode] {
-        return episodes.filter ({ $0.seanson == season })
+        return episodes.filter ({ $0.season == season })
     }
     
     var body: some View {

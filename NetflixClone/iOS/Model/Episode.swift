@@ -11,7 +11,7 @@ struct Episode : Identifiable {
     var id = UUID().uuidString
     
     var name : String
-    var seanson : Int
+    var season : Int
     var episodeNumber: Int
     var thumbnailImageURLString : String
     var description : String

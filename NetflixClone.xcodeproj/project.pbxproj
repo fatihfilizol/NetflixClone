@@ -30,6 +30,14 @@
 		FB989311298517D500410ABB /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989310298517D500410ABB /* TrailerList.swift */; };
 		FB989313298848A000410ABB /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989312298848A000410ABB /* EpisodesView.swift */; };
 		FB989319298E596200410ABB /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989318298E596200410ABB /* HomeStack.swift */; };
+		FB98931B298FA76F00410ABB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98931A298FA76F00410ABB /* SearchBar.swift */; };
+		FB98931E298FA92100410ABB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98931D298FA92100410ABB /* Colors.swift */; };
+		FB989320298FAEDC00410ABB /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98931F298FAEDC00410ABB /* ActivityIndicator.swift */; };
+		FB989322298FB91900410ABB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989321298FB91900410ABB /* SearchView.swift */; };
+		FB989324298FB97700410ABB /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989323298FB97700410ABB /* SearchVM.swift */; };
+		FB989326298FBC8100410ABB /* GenerateMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989325298FBC8100410ABB /* GenerateMovies.swift */; };
+		FB989328298FD9A900410ABB /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989327298FD9A900410ABB /* PopularMovieView.swift */; };
+		FB98932A298FF00A00410ABB /* SearchResultGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB989329298FF00A00410ABB /* SearchResultGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +64,14 @@
 		FB989310298517D500410ABB /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
 		FB989312298848A000410ABB /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		FB989318298E596200410ABB /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
+		FB98931A298FA76F00410ABB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FB98931D298FA92100410ABB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FB98931F298FAEDC00410ABB /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		FB989321298FB91900410ABB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FB989323298FB97700410ABB /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		FB989325298FBC8100410ABB /* GenerateMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMovies.swift; sourceTree = "<group>"; };
+		FB989327298FD9A900410ABB /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
+		FB989329298FF00A00410ABB /* SearchResultGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +140,7 @@
 				FB8546CA297D3AC800ABF2C8 /* HelperViews */,
 				FB8546CB297D3AF300ABF2C8 /* Model */,
 				FB8546CC297D3B0000ABF2C8 /* Helpers */,
+				FB98931C298FA78F00410ABB /* Search */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -170,6 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				FB1B29B029619F7100B81091 /* GlobalHelpers.swift */,
+				FB98931D298FA92100410ABB /* Colors.swift */,
+				FB98931F298FAEDC00410ABB /* ActivityIndicator.swift */,
+				FB989325298FBC8100410ABB /* GenerateMovies.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -193,6 +213,18 @@
 				FB98930E2985154100410ABB /* VideoPreviewImage.swift */,
 			);
 			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		FB98931C298FA78F00410ABB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FB98931A298FA76F00410ABB /* SearchBar.swift */,
+				FB989321298FB91900410ABB /* SearchView.swift */,
+				FB989323298FB97700410ABB /* SearchVM.swift */,
+				FB989327298FD9A900410ABB /* PopularMovieView.swift */,
+				FB989329298FF00A00410ABB /* SearchResultGrid.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB989328298FD9A900410ABB /* PopularMovieView.swift in Sources */,
 				FB989313298848A000410ABB /* EpisodesView.swift in Sources */,
+				FB989326298FBC8100410ABB /* GenerateMovies.swift in Sources */,
+				FB989324298FB97700410ABB /* SearchVM.swift in Sources */,
+				FB98931E298FA92100410ABB /* Colors.swift in Sources */,
 				FB1B29B129619F7100B81091 /* GlobalHelpers.swift in Sources */,
 				FB98930A298512C500410ABB /* Trailer.swift in Sources */,
+				FB989322298FB91900410ABB /* SearchView.swift in Sources */,
 				FB8546D0297D405900ABF2C8 /* Episode.swift in Sources */,
 				FB5A860529609D17006BB8C7 /* ContentView.swift in Sources */,
 				FB1B29B32961A14800B81091 /* HomeVM.swift in Sources */,
@@ -282,9 +319,12 @@
 				FB1B29AF29619E9900B81091 /* StandardHomeMovie.swift in Sources */,
 				FB8546C4296AB8FD00ABF2C8 /* TopMoviePreview.swift in Sources */,
 				FB1B29AB29619DCA00B81091 /* Movie.swift in Sources */,
+				FB98932A298FF00A00410ABB /* SearchResultGrid.swift in Sources */,
+				FB989320298FAEDC00410ABB /* ActivityIndicator.swift in Sources */,
 				FB5A860329609D17006BB8C7 /* NetflixCloneApp.swift in Sources */,
 				FB9893082982E77800410ABB /* MoreLikeThis.swift in Sources */,
 				FB989319298E596200410ABB /* HomeStack.swift in Sources */,
+				FB98931B298FA76F00410ABB /* SearchBar.swift in Sources */,
 				FB8546D2297D607900ABF2C8 /* CustomTabSwitcher.swift in Sources */,
 				FB989311298517D500410ABB /* TrailerList.swift in Sources */,
 				FB8546C6296AC01200ABF2C8 /* SmallVerticalButton.swift in Sources */,
