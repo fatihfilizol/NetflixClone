@@ -39,7 +39,7 @@ struct ComingSoon: View {
                 updateActiveIndex(fromScroll: newVal)
         }
 
-        //NavigationView {
+        NavigationView {
             return Group {
                 ZStack {
                     Color.black
@@ -81,7 +81,7 @@ struct ComingSoon: View {
                     self.navbarHidden = false
                 }
             }
-        //}
+        }
         
     }
 }

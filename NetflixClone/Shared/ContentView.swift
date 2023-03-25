@@ -32,7 +32,7 @@ struct ContentView: View {
                     Image(systemName: "play.rectangle")
                     Text("Coming Soon")
                 }.tag(2)
-            Text("Downloads")
+            DownloadsView()
                 .tabItem {
                     Image(systemName: "arrow.down.to.line.alt")
                     Text("Downloads")
@@ -42,13 +42,17 @@ struct ContentView: View {
                     Image(systemName: "equal")
                     Text("More")
                 }.tag(4)
-        }
+        }   
         .accentColor(.white)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            ContentView()
+        }
     }
 }

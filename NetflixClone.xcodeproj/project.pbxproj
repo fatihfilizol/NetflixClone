@@ -17,6 +17,7 @@
 		FB5811DF29CEFBB700F2CDC7 /* ComingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811DE29CEFBB700F2CDC7 /* ComingSoonRow.swift */; };
 		FB5811E129CF02AA00F2CDC7 /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811E029CF02AA00F2CDC7 /* ComingSoonVM.swift */; };
 		FB5811E329CF03DB00F2CDC7 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811E229CF03DB00F2CDC7 /* TrackableScrollView.swift */; };
+		FB5811E529CF204E00F2CDC7 /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811E429CF204E00F2CDC7 /* DownloadsView.swift */; };
 		FB5A860329609D17006BB8C7 /* NetflixCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A860229609D17006BB8C7 /* NetflixCloneApp.swift */; };
 		FB5A860529609D17006BB8C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A860429609D17006BB8C7 /* ContentView.swift */; };
 		FB5A860729609D18006BB8C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5A860629609D18006BB8C7 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		FB5811DE29CEFBB700F2CDC7 /* ComingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonRow.swift; sourceTree = "<group>"; };
 		FB5811E029CF02AA00F2CDC7 /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
 		FB5811E229CF03DB00F2CDC7 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		FB5811E429CF204E00F2CDC7 /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
 		FB5A85FF29609D17006BB8C7 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5A860229609D17006BB8C7 /* NetflixCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixCloneApp.swift; sourceTree = "<group>"; };
 		FB5A860429609D17006BB8C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 				FB5811E229CF03DB00F2CDC7 /* TrackableScrollView.swift */,
 			);
 			path = Comingsoon;
+			sourceTree = "<group>";
+		};
+		FB5811E629CF228000F2CDC7 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				FB5811E429CF204E00F2CDC7 /* DownloadsView.swift */,
+			);
+			name = Download;
 			sourceTree = "<group>";
 		};
 		FB5A85F629609D17006BB8C7 = {
@@ -164,6 +174,7 @@
 				FB8546CB297D3AF300ABF2C8 /* Model */,
 				FB8546CC297D3B0000ABF2C8 /* Helpers */,
 				FB98931C298FA78F00410ABB /* Search */,
+				FB5811E629CF228000F2CDC7 /* Download */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -328,6 +339,7 @@
 			files = (
 				FB989328298FD9A900410ABB /* PopularMovieView.swift in Sources */,
 				FB989313298848A000410ABB /* EpisodesView.swift in Sources */,
+				FB5811E529CF204E00F2CDC7 /* DownloadsView.swift in Sources */,
 				FB989326298FBC8100410ABB /* GenerateMovies.swift in Sources */,
 				FB989324298FB97700410ABB /* SearchVM.swift in Sources */,
 				FB5811DD29CEF57000F2CDC7 /* NotificationBar.swift in Sources */,
