@@ -18,6 +18,8 @@
 		FB5811E129CF02AA00F2CDC7 /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811E029CF02AA00F2CDC7 /* ComingSoonVM.swift */; };
 		FB5811E329CF03DB00F2CDC7 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811E229CF03DB00F2CDC7 /* TrackableScrollView.swift */; };
 		FB5811E529CF204E00F2CDC7 /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811E429CF204E00F2CDC7 /* DownloadsView.swift */; };
+		FB5811E829D03B9A00F2CDC7 /* MoviePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811E729D03B9A00F2CDC7 /* MoviePreviewCell.swift */; };
+		FB5811EB29D03DF400F2CDC7 /* MoviePreviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5811EA29D03DF400F2CDC7 /* MoviePreviewRow.swift */; };
 		FB5A860329609D17006BB8C7 /* NetflixCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A860229609D17006BB8C7 /* NetflixCloneApp.swift */; };
 		FB5A860529609D17006BB8C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A860429609D17006BB8C7 /* ContentView.swift */; };
 		FB5A860729609D18006BB8C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5A860629609D18006BB8C7 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		FB5811E029CF02AA00F2CDC7 /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
 		FB5811E229CF03DB00F2CDC7 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
 		FB5811E429CF204E00F2CDC7 /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
+		FB5811E729D03B9A00F2CDC7 /* MoviePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewCell.swift; sourceTree = "<group>"; };
+		FB5811EA29D03DF400F2CDC7 /* MoviePreviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewRow.swift; sourceTree = "<group>"; };
 		FB5A85FF29609D17006BB8C7 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5A860229609D17006BB8C7 /* NetflixCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixCloneApp.swift; sourceTree = "<group>"; };
 		FB5A860429609D17006BB8C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +122,15 @@
 			name = Download;
 			sourceTree = "<group>";
 		};
+		FB5811E929D03DD700F2CDC7 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				FB5811E729D03B9A00F2CDC7 /* MoviePreviewCell.swift */,
+				FB5811EA29D03DF400F2CDC7 /* MoviePreviewRow.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
 		FB5A85F629609D17006BB8C7 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +188,7 @@
 				FB8546CC297D3B0000ABF2C8 /* Helpers */,
 				FB98931C298FA78F00410ABB /* Search */,
 				FB5811E629CF228000F2CDC7 /* Download */,
+				FB5811E929D03DD700F2CDC7 /* Preview */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -344,8 +358,10 @@
 				FB989324298FB97700410ABB /* SearchVM.swift in Sources */,
 				FB5811DD29CEF57000F2CDC7 /* NotificationBar.swift in Sources */,
 				FB98931E298FA92100410ABB /* Colors.swift in Sources */,
+				FB5811E829D03B9A00F2CDC7 /* MoviePreviewCell.swift in Sources */,
 				FB1B29B129619F7100B81091 /* GlobalHelpers.swift in Sources */,
 				FB5811DA29CEF44100F2CDC7 /* ComingSoon.swift in Sources */,
+				FB5811EB29D03DF400F2CDC7 /* MoviePreviewRow.swift in Sources */,
 				FB98930A298512C500410ABB /* Trailer.swift in Sources */,
 				FB989322298FB91900410ABB /* SearchView.swift in Sources */,
 				FB8546D0297D405900ABF2C8 /* Episode.swift in Sources */,
@@ -505,6 +521,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,6 +551,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
